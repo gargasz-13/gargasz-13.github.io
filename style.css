@@ -58,7 +58,7 @@ h2 {
 }
 
 .header ul li {
-    margin 0 1em;
+    margin: 0 1em;
     padding: 1em 1vw 1vw;
 }
 
@@ -95,7 +95,7 @@ section {
     justify-content: center;
     font-size: 1rem;
     background-color: #f4f4f4;
-    background-image: url(images/parallax/image_1.png);
+    background-image: url(images/main-site/unused.png);
     background-size: cover;
     scroll-snap-align: center;
 }
@@ -114,25 +114,25 @@ section h2 {
 }
 
 section:nth-child(2) {
-    background-image: url(images/portfolio/image_2.jpg);
+    background-image: url(images/main-site/home.jpg);
     background-size: cover;
     background-position: center center;
 }
 
 section:nth-child(3) {
-    background-image: url(images/portfolio/image_7.jpg);
+    background-image: url(images/main-site/about.jpg);
     background-size: cover;
     background-position: center center;
 }
 
 section:nth-child(4) {
-    background-image: url(images/portfolio/image_8.jpg);
+    background-image: url(images/main-site/photography.jpg);
     background-size: cover;
     background-position: center center;
 }
 
 section:nth-child(5) {
-    background-image: url(images/portfolio/image_3.jpg);
+    background-image: url(images/main-site/programming.jpg);
     background-size: cover;
     background-position: center center;
 }
