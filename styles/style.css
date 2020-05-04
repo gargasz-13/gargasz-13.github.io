@@ -1,0 +1,40 @@
+html {
+    background-color: #d3e8d3;
+}
+h1, h6 {
+    font-family: 'Courier Prime', monospace;
+}
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+a, a:visited, a:hover, a:active {
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+}
+ul {
+    padding-left: 0;
+}
+ul > li {
+    display: inline-block;
+    font-family: 'Courier Prime', monospace;
+    padding-right: 2%;
+}
+ul > li > a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #003366;
+    display: block;
+    transition: width 0.3s;
+}
+ul > li  > a:hover::after {
+    width: 100%;
+}
+.hidden {
+    display: none;
+}
+ul > li#right {
+    float: right;
+    padding-right: 0;
+}

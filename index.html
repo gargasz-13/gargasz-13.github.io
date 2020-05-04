@@ -1,86 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mike Gargasz | Photographer, Developer, Engineer</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+
+    <title>Mike Gargasz</title>
+    <meta name="description" content="Personal website for Mike Gargasz from Madison, Wisconsin, USA."/>
+    <meta name="keywords" content="Mike Gargasz, Engineer, Photographer, Madison, Wisconsin"/>
+    <meta name="author" content="Mike Gargasz">
+
+    <!-- AWSM -->
+    <link rel="stylesheet" href="https://unpkg.com/awsm.css/dist/awsm.min.css">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Courier+Prime|Montserrat&display=swap" rel="stylesheet">
+    <!-- jQuery 1.8 or later, 33 KB -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Fotorama from CDNJS, 19 KB -->
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+    <!-- Photos -->
+    <script>
+        (function(src, cb) {
+            var s = document.createElement('script'); s.setAttribute('src', src);
+            s.onload = cb; (document.head || document.body).appendChild(s);
+        })('https://ucarecdn.com/libs/blinkloader/3.x/blinkloader.min.js', function() {
+            window.Blinkloader.optimize({
+                pubkey:'d085b23299dd8a96eac7',
+                fadeIn:true
+            });
+        })
+    </script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles/style.css">
+
 </head>
 <body>
-    <nav class="social">
-        <ul>
-            <li class="twitter">
-                <a href="https://twitter.com/MGargasz" target="_blank">
-                    <div>
-                        <i class="fab fa-twitter" aria-hidden="true"></i>
-                        <h3>Twitter</h3>
-                    </div>
-                </a>
-            </li>
-        </ul>
-        <ul>
-            <li class="resume">
-                <a href="resume/resume_july_2019.pdf" target="_blank">
-                    <div>
-                        <i class="fas fa-file-alt" aria-hidden="true"></i>
-                        <h3>Résumé</h3>
-                    </div>
-                </a>
-            </li>
-        </ul>
-        <ul>
-            <li class="email">
-                <a href="mailto:mike@gargasz.me">
-                    <div>
-                        <i class="fas fa-envelope" aria-hidden="true"></i>
-                        <h3>Email</h3>
-                    </div>
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <div class="smooth">
-        <div class="header">
-            <ul>
-                <li><a href="#home">Mike</a></li>
-                <li><a href="#photography">Photographer</a></li>
-                <li><a href="#programming">Developer</a></li>
-                <li><a href="#engineering">Engineer</a></li>
-            </ul>
+<header id="enHeader">
+    <h1>Mike Gargasz</h1>
+    <p><a href="#" onclick="toggle()">de</a></p>
+</header>
+<header id="deHeader" class="hidden">
+    <h1>Mike Gargasz</h1>
+    <p><a href="#" onclick="toggle()">en</a></p>
+</header>
+<main id="enBody">
+    <article>
+        <section>
+            <p>I graduated from <a href="https://www.osu.edu/" target="_blank">The Ohio State University</a> in May 2020 with a BS in Computer Engineering.
+                I'm currently working as server systems engineer living in Wisconsin, USA.</p>
+        </section>
+        <section>
+            <p>I also study German and intend to pursue the <a href="https://www.goethe.de/en/spr/kup/prf/prf/gc1.html" target="_blank">CEFR C1 certification</a> very soon. Sometimes I
+                take photos or add computers to things around the house to make them better.</p>
+        </section>
+        <section>
+            <p>Here are some photos of things I've seen or done:</p>
+        </section>
+        <section></section>
+    </article>
+</main>
+<main id="deBody" class="hidden">
+    <article>
+        <section>
+            <p>Ich habe im Mai 2020 meinen Abschluss an der <a href="https://www.osu.edu/" target="_blank">Ohio State Universität</a> mit einem BS in Informationstechnologie
+                gemacht. Ich arbeite derzeit als Server-Systemingenieur in Wisconsin, USA.</p>
+        </section>
+        <section>
+            <p>Ich lerne auch Deutsch und beabsichtige, sehr bald die <a href="https://www.goethe.de/de/spr/kup/prf/prf/gc1.html" target="_blank">CEFR C1-Zertifizierung</a> zu erhalten. Manchmal
+                mache ich Fotos oder füge Computer zu Dingen im Haus hinzu, um sie besser zu machen.</p>
+        </section>
+        <section>
+            <p>Hier sind Fotos von Dingen, die ich gesehen oder getan habe:</p>
+        </section>
+        <section></section>
+    </article>
+</main>
+<main>
+    <section>
+        <div class="fotorama" data-allowfullscreen="true" data-nav="false" data-loop="true" data-autoplay="10000">
+            <img data-blink-src="https://ucarecdn.com/4d86ce5c-64bd-48c3-9672-7139317ac6c9/image_3.jpg-/resize/1080x/-/quality/lightest/-/format/auto/" alt="Foto 1">
+            <img data-blink-src="https://ucarecdn.com/4d86ce5c-64bd-48c3-9672-7139317ac6c9/image_3.jpg-/resize/1080x/-/quality/lightest/-/format/auto/" alt="Foto 1">
         </div>
-        <section id="home">
-            <h2>Mike Gargasz</h2>
-            <div class="arrowD bounceD">
-                <a class="fa fa-arrow-down fa-2x" href="#photography"></a>
-            </div>
-        </section>
-        <section id="photography">
-            <div class="arrowU bounceU">
-                <a class="fa fa-arrow-up fa-2x" href="#home"></a>
-            </div>
-            <h2>Photography</h2>
-            <div class="arrowD bounceD">
-                <a class="fa fa-arrow-down fa-2x" href="#programming"></a>
-            </div>
-        </section>
-        <section id="programming">
-            <div class="arrowU bounceU">
-                <a class="fa fa-arrow-up fa-2x" href="#photography"></a>
-            </div>
-            <h2>Programming</h2>
-            <div class="arrowD bounceD">
-                <a class="fa fa-arrow-down fa-2x" href="#engineering"></a>
-            </div>
-        </section>
-        <section id="engineering">
-            <div class="arrowU bounceU">
-                <a class="fa fa-arrow-up fa-2x" href="#programming"></a>
-            </div>
-            <h2>Engineering</h2>
-        </section>
-    </div>
+    </section>
+    <section>
+        <ul>
+            <li id="enResume"><a href="resume/resume_july_2019.pdf" target="_blank">Resume</a></li>
+            <li id="deResume" class="hidden"><a href="resume/resume_july_2019.pdf" target="_blank">Lebenslauf</a></li>
+            <li><a href="https://twitter.com/mgargasz" target="_blank">Twitter</a></li>
+            <li><a href="https://github.com/gargasz-13" target="_blank">GitHub</a></li>
+            <li id="right"><a href="mailto:mike@gargasz.me">mike@gargasz.me</a></li>
+    </section>
+</main>
 </body>
+<script>
+    function toggle() {
+        $('#enHeader, #deHeader, #enBody, #deBody, #enResume, #deResume').toggleClass('hidden');
+    }
+</script>
 </html>
